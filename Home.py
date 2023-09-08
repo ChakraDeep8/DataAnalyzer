@@ -62,7 +62,7 @@ st.write('<p style="font-size:130%">Import Dataset</p>', unsafe_allow_html=True)
 file_format = st.radio('Select file format:', ('csv', 'excel'), key='file_format')
 dataset = st.file_uploader(label='')
 
-use_defo = st.checkbox('Use example Dataset')
+use_defo = st.checkbox('Use Sample Datasets')
 if use_defo:
     select_dataset = st.selectbox('Select a dataset 👇',
                                   ['Car Price', 'Loan Eligibility', 'Diabetes', 'Hypertension', 'Stroke'])
